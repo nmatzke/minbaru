@@ -7,12 +7,33 @@ This solves several problems for YECs -- it reduces the number of species they h
 
 The rational strategy would have been to agree "it looks like evolution happened, doesn't it?", but creationists invented a different strategy.  They took an old creationst term "baramin" and constructed "baraminology". Baraminology attempts to quantify the differences between species, and, using clustering, determine what the created kinds are.  This basically amounts to phenetics with clustering, but it is interesting* that creationists would even attempt to come up with a quantitative, replicable method based on their views.
 
-The program the baraminologists use is called bdist.  It originally existed as a Perl script, bdist.pl (), and later was made into a web service, bdistmds, that added bootstrapping and graphical MDS (multidimensional scaling) outputs.
+The program the baraminologists use is called bdist.  It originally existed as a Perl script, bdist.pl, and later was made into a web service, bdistmds, that added bootstrapping and graphical MDS (multidimensional scaling) outputs. (See references/links below.)
 
-The R code here replicates the basic bdist calculations and derivatives. My basic goal was to see exactly what the baraminologists are doing, since I suspect that cladistic datasets contain objective tree structure that is poorly represented in a phenetic analysis and MDS plots.
+The R code here replicates the basic bdist calculations and derivatives. My basic goal was to see exactly what the baraminologists are doing, since I suspect that cladistic datasets contain objective tree structure that is poorly represented in a phenetic analysis and MDS plots. I also suspect that typical baraminology practices, such as excluding data below a cutoff, and looking for clusters only within a narrowly-defined cladistic dataset, are objectively bad, even given their assumptions and goals.
 
 Eventually I may get this up to a full R package on CRAN, and/or a publication -- although it is way down on my list for the moment. I may also use it just to practice R package construction and unit testing on a simple (pure R) code base.
 
 Here is the story behind the name, "minbaru": The term "baramin" for created (bara) kind (min) is, I gather, ungrammatical Hebrew.  Various websites suggest that "minbaru" would be the correct way to say what the creationists are trying to say. I have no idea, personally, but I think the reversal of the term captures what my goals are here.
 
-* Interesting, at least to the community of "creationism watchers" that observe creationist shenanigans with a mixture of horror and fascination.
+* Interesting, that is, at least to the community of "creationism watchers" that observe creationist shenanigans with a mixture of horror and fascination.
+
+
+References
+
+The main person supporting and promoting BDIST is Todd Wood at Bryan College (yes, that's William Jennings Bryan College, located in Dayton, TN, home of the 1925 Scopes Monkey Trial). Wood is one of the very few creationists with a nonzero understanding of modern evolutionary biology and its quantitative methods, and he has at various points admitted the incompetence of much creationist work, and the empirical difficulties that creationism has.  He also seems to take the most honest position that a creationist can take, which is that he is not a creationist because of the empirical data, he is a creationist because of his literalist reading of the Bible. (Kurt Wise is another one of these rarities.)
+
+Anyway, we have Todd Wood to thank for putting BDIST online.
+
+The original bdist.pl can be found at:
+http://web.archive.org/web/20060616052853/http://www.bryancore.org/bsg/bdist.html
+http://web.archive.org/web/20050905145521/http://www.bryancore.org/bsg/bdist.pl
+
+The online version of bdistmds can be found at:
+http://www.coresci.org/bdist.html
+
+And limited documentation at:
+http://www.coresci.org/bdistinfo.html
+
+The original creationist paper on baraminic distances was: 
+
+Robinson, D. Ashley; Cavanaugh, David P. (1998). A Quantitative Approach to Baraminology With Examples from the Catarrhine Primates. Creation Research Society Quarterly, 34(4),  196-208.
