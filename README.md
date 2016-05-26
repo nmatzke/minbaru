@@ -28,7 +28,7 @@ The original bdist.pl can be found at:
 http://web.archive.org/web/20060616052853/http://www.bryancore.org/bsg/bdist.html
 http://web.archive.org/web/20050905145521/http://www.bryancore.org/bsg/bdist.pl
 
-The online version of bdistmds can be found at:
+The online version of bdistmds (no source code, but the key calculations seem to be identical with bdist.pl) can be found at:
 http://www.coresci.org/bdist.html
 
 And limited documentation at:
