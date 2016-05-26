@@ -1,0 +1,95 @@
+BDISTMDS performs Baraminic Distance analyses on systematic datasets.
+  version 2.0
+
+  Please cite:
+
+  Wood, T.C.  2005.  Visualizing baraminic distances using classical
+	multidimensional scaling.  Origins (GRI) 57:9-29.
+  Robinson, D.A. and D.P. Cavanaugh.  1998.  A quantitative approach to
+	baraminology with examples from the primates.  CRSQ 34:196-208.
+  Wood, T.C.  2008.  BDISTMDS software, v. 2.0.  Center for Origins Research,
+	Bryan College.  Distributed by the author.
+
+
+ Date: Wed May 18 05:06:36 2016
+ Number of taxa:  5
+ Number of characters:  5
+ Characters with a<0.95:  1
+ 4 characters will be used to calculate baraminic distances.
+
+Input dataset:
+
+sp1	0	0	2	0
+sp2	0	0	1	2
+sp3	1	0	2	3
+sp4	1	1	0	0
+sp5	2	1	1	1
+
+Character	Relevance
+---------	---------
+ *     1	   1.000
+ *     2	   1.000
+ *     3	   1.000
+ *     4	   1.000
+       5	   0.800
+
+
+Taxon	Taxic Relevance
+-----	---------------
+sp1	1.000
+sp2	1.000
+sp3	1.000
+sp4	0.800
+sp5	1.000
+
+Taxa with taxic relevance less than 0.66:
+None
+
+
+Character	Diversity
+---------	---------
+    1		0.550
+    2		0.350
+    3		0.550
+    4		0.650
+    5		0.500
+
+
+--------------------Distance Matrix--------------------
+
+	sp1	sp2	sp3	sp4	sp5
+sp1	0.000	0.500	0.500	0.750	1.000
+sp2	0.500	0.000	0.750	1.000	0.750
+sp3	0.500	0.750	0.000	0.750	1.000
+sp4	0.750	1.000	0.750	0.000	0.750
+sp5	1.000	0.750	1.000	0.750	0.000
+
+
+--------------------Correlation Matrix--------------------
+
+	sp1	sp2	sp3	sp4	sp5
+sp1	1.000	0.400	0.511	-0.289	-0.800
+sp2	0.400	1.000	-0.087	-0.783	-0.161
+sp3	0.511	-0.087	1.000	-0.130	-0.762
+sp4	-0.289	-0.783	-0.130	1.000	-0.040
+sp5	-0.800	-0.161	-0.762	-0.040	1.000
+
+
+--------------------Probability Matrix--------------------
+
+	sp1	sp2	sp3	sp4	sp5
+sp1	0.000	0.505	0.379	0.637	0.104
+sp2	0.505	0.000	0.889	0.117	0.796
+sp3	0.379	0.889	0.000	0.835	0.134
+sp4	0.637	0.117	0.835	0.000	0.949
+sp5	0.104	0.796	0.134	0.949	0.000
+
+
+--------------------Graphical Matrix--------------------
+
+	sp1	sp3	sp2	sp4	sp5
+sp1	+				
+sp3		+			
+sp2			+		
+sp4				+	
+sp5					+
